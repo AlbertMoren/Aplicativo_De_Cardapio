@@ -7,8 +7,14 @@ O aplicativo foi desenvolvido utilizando LinearLayout como estrutura principal d
 No final do aplicativo, foi adicionado um TextView responsável por exibir o valor total do pedido, com funcionalidades para incrementar e decrementar esse valor conforme o usuário realiza suas seleções. Adicionalmente, foi inserido um botão que, ao ser acionado, envia uma notificação em tela. Se houver pelo menos um item marcado no pedido, a notificação informa ao usuário que o pedido foi enviado com sucesso. No entanto, se nenhum item estiver marcado, a notificação alerta o usuário a selecionar pelo menos um item antes de enviar o pedido. Essas funcionalidades visam proporcionar uma interação intuitiva e informativa ao usuário durante o processo de seleção de itens do cardápio.
 
 
-![img1](img/imag1.png)
-![img1](img/imag2.png)
-![img1](img/imag3.png)
-![img1](img/imag4.png)
-![img1](img/imag5.png)
+<table>
+  <tr>
+    <td align="center"><img src="img/imag1.png" alt="Imagem 1"></td>
+    <td align="center"><img src="img/imag2.png" alt="Imagem 2"></td>
+    <td align="center"><img src="img/imag3.png" alt="Imagem 3"></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="img/imag4.png" alt="Imagem 4"></td>
+    <td align="center"><img src="img/imag5.png" alt="Imagem 5"></td>
+  </tr>
+</table>
