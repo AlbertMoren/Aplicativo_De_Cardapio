@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Trattoria del Sole</string>
+    <string name="sub_Title">Menu</string>
+    <string name="observation">Observação</string>
+
+    <string name="Appetizer">Entradas</string>
+    <string name="Appetizer_option1">Bruschetta Tradicional: 5 minutos</string>
+    <string name="Appetizer_option2">Insalata Caprese: 10 minutos</string>
+    <string name="Appetizer_option3">Arancini: 15 minutos</string>
+    <string name="Appetizer_option4">Carpaccio de Carne: 20 minutos</string>
+    <string name="Appetizer_option1_price">R$ 15,00</string>
+    <string name="Appetizer_option2_price">R$ 18,00</string>
+    <string name="Appetizer_option3_price">R$ 20,00</string>
+    <string name="Appetizer_option4_price">R$ 22,00</string>
+
+
+    <string name="main_dishes">Pratos Principais</string>
+    <string name="main_Dishes_option1">Pizza Margherita: 25 minutos</string>
+    <string name="main_dishes_option2">Risoto de Funghi: 30 minutos</string>
+    <string name="main_dishes_option3">Penne alla Carbonara: 35 minutos</string>
+    <string name="main_dishes_option4">Osso Buco: 40 minutos</string>
+    <string name="main_dishes_option1_price">R$ 30,00</string>
+    <string name="main_dishes_option2_price">R$ 35,00</string>
+    <string name="main_dishes_option3_price">R$ 40,00</string>
+    <string name="main_dishes_option4_price">R$ 45,00</string>
+
+    <string name="drinks">Bebidas</string>
+    <string name="drinks_option1">Vinho Chianti (Garrafa)</string>
+    <string name="drinks_option2">Limone e Menta</string>
+    <string name="drinks_option1_price">R$ 30,00</string>
+    <string name="drinks_option2_price">R$ 12,00</string>
+
+    <string name="desserts">Sobremesas</string>
+    <string name="desserts_option1">Gelato: imediato</string>
+    <string name="desserts_option2">Panna Cotta: 50 minutos</string>
+    <string name="desserts_option3">Tiramisù: 50 minutos</string>
+    <string name="desserts_option4">Cannoli Siciliano: 1 hora</string>
+    <string name="desserts_option1_price">R$ 10,00</string>
+    <string name="desserts_option2_price">R$ 20,00</string>
+    <string name="desserts_option3_price">R$ 18,00</string>
+    <string name="desserts_option4_price">R$ 25,00</string>
+
+    <string name="totalvalue">R$ 00,00</string>
+    <string name="end">Finalizar pedido</string>
+</resources>

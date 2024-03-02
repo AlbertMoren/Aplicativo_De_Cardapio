@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <!-- Início do layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título do aplicativo -->
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+        <!-- Subtítulo do aplicativo -->
+        <TextView
+            android:id="@+id/text_subTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="@string/sub_Title"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+        <!-- Linha separadora -->
+        <View
+            android:id="@+id/view_separate"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/black" />
+
+        <!-- Opções de aperitivos -->
+        <TextView
+            android:id="@+id/text_Appetizer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/orange"
+            android:paddingStart="8dp"
+            android:paddingEnd="0dp"
+            android:text="@string/Appetizer"
+            android:textColor="@color/black"
+            android:textSize="32sp" />
+
+        <!-- Opção de aperitivo 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+
+            <CheckBox
+                android:id="@+id/check_AppetizerOption1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Appetizer_option1"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/text_AppetizerOption1Price"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/Appetizer_option1_price"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <!-- Opção de aperitivo 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            >
+
+            <CheckBox
+                android:id="@+id/check_AppetizerOption2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Appetizer_option2"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/Appetizer_option2_price"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <!-- Opção de aperitivo 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+
+            <CheckBox
+                android:id="@+id/check_AppetizerOption3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Appetizer_option3"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/Appetizer_option3_price"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <!-- Opção de aperitivo 4 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+            <CheckBox
+                android:id="@+id/check_AppetizerOption4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Appetizer_option4"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/Appetizer_option4_price"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <!-- Espaço para observações sobre o pedido -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:hint="@string/observation"
+            android:layout_marginBottom="8dp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
+
+        <!-- Parte do layout definido para os pratos principais -->
+        <TextView
+            android:id="@+id/text_mainDishes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/main_dishes"
+            android:textSize="32sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="0dp"
+            android:background="@color/orange"
+            android:textColor="@color/black"/>
+
+        <!-- Opção de prato principal 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+
+            <CheckBox
+                android:id="@+id/check_mainDishesOption1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/main_Dishes_option1"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/main_dishes_option1_price"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <!-- Opção de prato principal 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+
+            <CheckBox
+                android:id="@+id/check_mainDishesOption2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/main_dishes_option2"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/main_dishes_option2_price"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <!-- Opção de prato principal 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+
+            <CheckBox
+                android:id="@+id/check_mainDishesOption3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/main_dishes_option3"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/main_dishes_option3_price"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <!-- Opção de prato principal 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+
+            <CheckBox
+                android:id="@+id/check_mainDishesOption4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/main_dishes_option4"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/main_dishes_option4_price"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <!-- Espaço para observações sobre o pedido -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:hint="@string/observation"
+            android:layout_marginBottom="8dp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
+
+
+        <!-- Parte do layout definido para as sobremesas -->
+        <TextView
+            android:id="@+id/text_desserts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/desserts"
+            android:textSize="32sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="0dp"
+            android:background="@color/orange"
+            android:textColor="@color/black"/>
+
+        <!-- Opção de sobremesa 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+
+            <CheckBox
+                android:id="@+id/check_dessertsOption1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/desserts_option1"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/desserts_option1_price"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <!-- Opção de sobremesa 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+
+            <CheckBox
+                android:id="@+id/check_dessertsOption2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/desserts_option2"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/desserts_option2_price"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <!-- Opção de sobremesa 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+
+            <CheckBox
+                android:id="@+id/check_dessertsOption3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/desserts_option3"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/desserts_option3_price"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <!-- Opção de sobremesa 4 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+
+            <CheckBox
+                android:id="@+id/check_dessertsOption4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/desserts_option4"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/desserts_option4_price"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <!-- Espaço para observações sobre o pedido -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:hint="@string/observation"
+            android:layout_marginBottom="8dp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
+
+        <!-- Parte do layout definido para as bebidas -->
+        <TextView
+            android:id="@+id/text_drinks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/drinks"
+            android:textSize="32sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="0dp"
+            android:background="@color/orange"
+            android:textColor="@color/black"/>
+
+        <!-- Opção de bebida 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+
+            <CheckBox
+                android:id="@+id/check_drinksOption1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/drinks_option1"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/drinks_option1_price"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <!-- Opção de bebida 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+
+            <CheckBox
+                android:id="@+id/check_drinksOption2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/drinks_option2"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/drinks_option2_price"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+
+        <!-- Parte do layout definido para a parte final do app -->
+        <!-- Valor total do pedido -->
+        <TextView
+            android:id="@+id/text_totalValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/totalvalue"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/white"/>
+
+        <!-- Botão final para concluir o pedido -->
+        <Button
+            android:id="@+id/button_buttonFinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/end"
+            android:textSize="32sp"
+            android:backgroundTint="@color/orange"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+</ScrollView>
